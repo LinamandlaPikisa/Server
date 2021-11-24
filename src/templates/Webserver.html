@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<!-- Making a heading that will apper in the middle of the screen -->
+
+		<center>
+			<h1>
+				By:
+				<br>
+			    PKSLIN002 - Linamandla Pikisa
+			</h1>
+		</center>
+	
+		<!-- Make sure that the buttons appear in the center of the screen-->
+		<style>
+			.Buttons
+			{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div class="Buttons">
+
+			<!-- Buttons that code for specific functionalities. -->
+			<a href="{{ url_for('.turnOn') }}">
+				<button>
+					Sensor On
+				</button>
+			</a>
+
+			<br>
+			<br>
+			
+			<a href="{{ url_for('.turnOff') }}">
+				<button>
+					Sensor Off
+				</button>
+			</a>
+			
+			<br>
+			<br>
+
+			<a href="{{ url_for('.getStatus') }}">
+				<button>
+					Status
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.logs') }}">
+				<button>
+					Log Check
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.download' ) }}">
+				<button>
+					Log Download
+				</button>
+			</a>
+
+			<br>
+			<br>
+
+			<a href="{{ url_for('.exit') }}">
+				<button>
+					Exit
+				</button>
+			</a>
+		</div>
+	</body>
+</html>
